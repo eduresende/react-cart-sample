@@ -4,6 +4,7 @@ export default function (product) {
     const oldItems = this.state.cartItems;
     const newItems = [];
     let added = false;
+    var cartTotalPrice = 0;
 
     lodash.forEach(oldItems, (item) => {
         let quantity = item.quantity;
@@ -20,5 +21,7 @@ export default function (product) {
         newItems.push({ product, quantity: 1 });
     }
 
-    this.setState({ cartItems: newItems });
+    cartTotalPrice = this.computeCartTotalPrice(newItems);
+
+    this.setState({ cartItems: newItems, cartTotalPrice: cartTotalPrice });
 }

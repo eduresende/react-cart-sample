@@ -3,6 +3,7 @@ import lodash from 'lodash';
 export default function removeFromCart(product) {
     const oldItems = this.state.cartItems;
     const newItems = [];
+    var cartTotalPrice = 0;
 
     lodash.forEach(oldItems, (item) => {
         let quantity = item.quantity;
@@ -16,5 +17,7 @@ export default function removeFromCart(product) {
         }
     });
 
-    this.setState({ cartItems: newItems });
+    cartTotalPrice = this.computeCartTotalPrice(newItems);
+
+    this.setState({ cartItems: newItems, cartTotalPrice: cartTotalPrice });
 }

@@ -18,6 +18,7 @@ import searchProductSetter from './setters/search_product';
 import selectProductSetter from './setters/select_product';
 import addToCartSetter from './setters/add_to_cart';
 import removeFromCartSetter from './setters/remove_from_cart';
+import computeCartTotalPrice from './setters/compute_cart_total_price';
 
 class App extends Component {
   constructor(props) {
@@ -27,7 +28,8 @@ class App extends Component {
           searchTerm: '',
           products: this.props.allProducts,
           selectedProduct: null,
-          cartItems: []
+          cartItems: [],
+          cartTotalPrice: 0
       };
 
       // disponibilizando getters e setters como metodos de App:
@@ -43,6 +45,7 @@ class App extends Component {
       this.selectProduct = selectProductSetter.bind(this);
       this.addToCart = addToCartSetter.bind(this);
       this.removeFromCart = removeFromCartSetter.bind(this);
+      this.computeCartTotalPrice = computeCartTotalPrice.bind(this);
   }
 
   render() {
