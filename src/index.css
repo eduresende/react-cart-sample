@@ -2,4 +2,41 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #333;
+}
+
+table {
+  margin: 0 auto;
+  font-family: verdana,arial,sans-serif;
+  font-size:12px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+
+table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+  width: 150px;
+}
+
+table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+
+input {
+  margin: 20px;
+  width: 300px;
+}
+
+hr {
+  margin: 30px 0;
 }
