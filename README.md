@@ -1,7 +1,6 @@
 
+* React Cart Sample
 
-- React Cart Sample
-
-Demo: https://powerful-eyrie-12682.herokuapp.com/
+<a href="https://powerful-eyrie-12682.herokuapp.com/" target="_blank">Demo</a>
 
 Eduardo Resende
