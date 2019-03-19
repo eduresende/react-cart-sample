@@ -10,7 +10,7 @@ export default class extends Component {
         const products = app.products();
 
         const listItems = products.map((product) => {
-            return <ProductListItem key={product.title} product={product} app={this.props.app} />;
+            return <ProductListItem key={product.title} product={product} app={app} />;
         });
 
         return (

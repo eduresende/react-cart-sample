@@ -57,9 +57,9 @@ class App extends Component {
         </div>
 
         <div>
-          <ProductList products={this.state.products} app={this} />
-          <ProductDetail product={this.state.selectedProduct} app={this} />
-          <Cart cartItems={this.state.cartItems} app={this} />
+          <ProductList app={this} />
+          <ProductDetail app={this} />
+          <Cart app={this} />
         </div>
       </div>
     );

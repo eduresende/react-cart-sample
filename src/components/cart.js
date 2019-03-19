@@ -5,14 +5,15 @@ import CartItem from './cart_item';
 
 export default class extends Component {
     cartItems() {
-        const items = this.props.cartItems;
+        const app = this.props.app;
+        const items = app.state.cartItems;
 
         if (items.length === 0) {
             return <div>Nenhum produto no carrinho</div>;
         }
 
         const cItems = items.map((item) => {
-            return (<CartItem key={item.product.title} item={item} app={this.props.app} />);
+            return (<CartItem key={item.product.title} item={item} app={app} />);
         });
 
         return (

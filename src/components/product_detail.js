@@ -4,7 +4,7 @@ export default class extends Component {
     render() {
         // values
         const app = this.props.app;
-        const product = this.props.product;
+        const product = app.state.selectedProduct;
 
         // app methods
         const addToCart = app.addToCart;
