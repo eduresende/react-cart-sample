@@ -1,9 +1,9 @@
 
 React Cart Sample
 
-A really simple application created with the purpose to learn react
+A really simple application designed to learn how to use the React libray
 
-Used <a href="https://github.com/facebook/create-react-app" target="_blank">Create React App</a>
+Created with: <a href="https://github.com/facebook/create-react-app" target="_blank">Create React App</a>
 
 Install and Run:
 
